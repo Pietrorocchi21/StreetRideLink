@@ -14,7 +14,7 @@
 - [Funzionalità Principali](#-funzionalità-principali)
 - [Analisi Tecnica](#-analisi-tecnica)
 - [Roadmap di Sviluppo](#-roadmap-di-sviluppo)
-- [Hardware Requisito](#-hardware-requisito)
+- [Hardware](#-hardware)
 
 ---
 
