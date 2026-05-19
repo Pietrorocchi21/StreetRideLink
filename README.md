@@ -53,7 +53,8 @@ Il sistema utilizza un algoritmo di **Sensor Fusion** per calcolare l'angolo di 
 float calculateLeanAngle(float accAngle, float gyroRate, float dt) {
     float angle = 0.98 * (angle + gyroRate * dt) + 0.02 * accAngle;
     return angle;
-}
+}```
+
 # 🏍️ MotoSmart Hub: The Intelligent Motorcycle Co-Pilot
 
 > **Un ecosistema open-source per trasformare ogni moto in una smart-bike.**
