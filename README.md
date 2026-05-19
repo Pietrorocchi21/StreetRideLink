@@ -54,3 +54,58 @@ float calculateLeanAngle(float accAngle, float gyroRate, float dt) {
     float angle = 0.98 * (angle + gyroRate * dt) + 0.02 * accAngle;
     return angle;
 }
+# 🏍️ MotoSmart Hub: The Intelligent Motorcycle Co-Pilot
+
+> **Un ecosistema open-source per trasformare ogni moto in una smart-bike.**
+> Integra navigazione, telemetria avanzata, sicurezza attiva e connettività social.
+
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![Version](https://img.shields.io/badge/version-1.0.0--alpha-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+---
+
+## 🗺️ Roadmap di Sviluppo
+
+Segui l'avanzamento del progetto attraverso le fasi di rilascio:
+
+- [x] **Fase 1: Fondamenta**
+  - [x] Selezione Microcontrollore (ESP32-S3).
+  - [x] Algoritmo Sensor Fusion per calcolo angolo di piega.
+- [ ] **Fase 2: Sicurezza & Telemetria**
+  - [ ] Sviluppo analisi FFT per riconoscimento vibrazioni ABS.
+  - [ ] Implementazione Buffer Circolare per Scatola Nera.
+  - [ ] Logica di rilevamento caduta per e-Call.
+- [ ] **Fase 3: Connettività & UI**
+  - [ ] Integrazione API meteo dinamiche.
+  - [ ] Modalità Notturna adattiva automatica.
+  - [ ] Protocollo MQTT per il Ghost Riding di gruppo.
+
+---
+
+## 🛠️ Hardware
+
+Il sistema è progettato per essere modulare. Di seguito i componenti necessari per il build standard:
+
+| Componente | Modello Consigliato | Funzione |
+| :--- | :--- | :--- |
+| **Cervello (MCU)** | `ESP32-S3` | Elaborazione dati e gestione UI. |
+| **Sensore Inerziale** | `Bosch BNO055` | IMU a 9 assi per piega e decelerazione. |
+| **Modulo GPS** | `u-blox NEO-M8N` | Posizionamento e navigazione. |
+| **Modulo Cellulare** | `SIM7600G-H (4G)` | Connettività cloud e chiamate d'emergenza. |
+| **Display** | `4.3" IPS 1000 nits` | Output visivo IP67 antiriflesso. |
+| **Storage** | `MicroSD 32GB` | Logging dati telemetrici (Black Box). |
+
+---
+
+## 🔬 Dettagli Tecnici
+
+### Analisi della Frenata (Senza Centralina)
+Il dispositivo monitora la decelerazione longitudinale ($G$) e analizza le vibrazioni ad alta frequenza per rilevare l'attivazione meccanica dell'ABS:
+
+```cpp
+// Esempio logica trigger ABS basata su soglia vibrazioni
+if (longitudinalG < -0.8 && vibrationFrequency > ABS_THRESHOLD) {
+    status.absTriggered = true;
+    display.showAlert("ABS ACTIVE");
+}
