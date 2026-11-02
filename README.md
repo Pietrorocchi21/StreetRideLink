@@ -15,7 +15,7 @@ MotoLink è un dispositivo smart da montare sulla motocicletta, pensato per rend
 
 Mostra le informazioni essenziali direttamente sul manubrio — come la prossima svolta, la distanza da percorrere e i dati di viaggio — mentre lo smartphone resta il centro per mappe, percorsi e connessione Internet.
 
-L’obiettivo è offrire un’esperienza pratica e accessibile, senza abbonamenti obbligatori e senza la necessità di una SIM dedicata nel dispositivo.
+L’obiettivo è offrire un’esperienza pratica e accessibile, senza la necessità di una SIM dedicata nel dispositivo.
 
 ---
 
@@ -58,13 +58,47 @@ Durante la guida, guardare il telefono per le indicazioni può essere scomodo e 
 
 ---
 
-## 🧩 Due versioni
+## 🧩 Versioni e abbonamento modulare
+
+MotoLink sarà disponibile in due versioni hardware:
 
 ### MotoLink Core
-La versione essenziale: navigazione, informazioni di viaggio e comandi fisici. Un prodotto semplice, con un pagamento una tantum e senza abbonamenti.
+La versione essenziale, pensata per navigazione, informazioni di viaggio e comandi fisici.
 
 ### MotoLink Advanced
-La versione più completa, con funzioni aggiuntive attivabili in base alle esigenze. Alcune funzioni opzionali potranno richiedere un abbonamento.
+La versione più completa, con hardware aggiuntivo e maggiore possibilità di espansione.
+
+### Abbonamento modulare e personalizzato
+Le funzionalità non saranno tutte incluse in un unico pacchetto rigido: potrai attivare solo ciò che ti serve, scegliendo le funzioni una per una.
+
+Il sistema sarà organizzato per categorie, ad esempio:
+
+- **Viaggio:** navigazione avanzata, percorsi GPX, storico viaggi
+- **Camera:** controllo GoPro o Insta360, registrazione e tag dei momenti importanti
+- **Squad:** posizione dei compagni, comunicazione e funzioni di gruppo
+- **Pro:** telemetria avanzata, analisi della guida e funzioni professionali
+
+In questo modo ogni motociclista può costruire la propria configurazione MotoLink, pagando soltanto per le funzionalità che utilizza davvero.
+
+---
+
+## 🔮 Funzionalità future
+
+Oltre alle funzioni di base, MotoLink potrà includere:
+
+- **Percorsi GPX** e gestione avanzata dei viaggi
+- **Telemetria avanzata** con accelerazioni, frenate e analisi della guida
+- **Cloud** per salvare viaggi, statistiche e configurazioni
+- **Black box** con registrazione dei dati negli istanti precedenti a un evento
+- **Rilevamento caduta** ed eventuale chiamata di emergenza
+- **Antifurto GPS** con notifiche in caso di movimento sospetto
+- **Posizione dei compagni di viaggio** in tempo reale
+- **Comunicazione di gruppo**, con possibile indicazione visiva di chi sta parlando
+- **Rete mesh** tra dispositivi MotoLink per viaggi di gruppo anche senza copertura cellulare
+- **Meteo dinamico** con avvisi su pioggia o condizioni avverse
+- **Modalità notturna** per una visualizzazione più confortevole
+- **Assistente vocale** e lettura dei messaggi in arrivo
+- **Integrazioni con action cam** per avviare, fermare o contrassegnare le registrazioni
 
 ---
 
