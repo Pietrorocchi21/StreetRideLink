@@ -56,6 +56,13 @@ Durante la guida, guardare il telefono per le indicazioni può essere scomodo e 
 - Possibili integrazioni future con Insta360
 - Funzioni pensate per viaggi di gruppo
 
+### Musica e intrattenimento
+- **Waveify**, il servizio musicale personale integrato in MotoLink
+- Musica gratuita e senza pubblicità
+- Playlist, brani preferiti e riproduzione musicale
+- Comandi rapidi per play, pausa, traccia successiva o precedente
+- Interfaccia pensata per l’uso con i guanti
+
 ---
 
 ## 🧩 Versioni e abbonamento modulare
@@ -77,8 +84,9 @@ Il sistema sarà organizzato per categorie, ad esempio:
 - **Camera:** controllo GoPro o Insta360, registrazione e tag dei momenti importanti
 - **Squad:** posizione dei compagni, comunicazione e funzioni di gruppo
 - **Pro:** telemetria avanzata, analisi della guida e funzioni professionali
+- **Musica:** Waveify, playlist e riproduzione musicale
 
-In questo modo ogni motociclista può costruire la propria configurazione MotoLink, pagando soltanto per le funzionalità che utilizza davvero.
+In questo modo ogni motociclista può costruire la propria configurazione MotoLink, attivando soltanto le funzionalità che utilizza davvero.
 
 ---
 
@@ -99,6 +107,7 @@ Oltre alle funzioni di base, MotoLink potrà includere:
 - **Modalità notturna** per una visualizzazione più confortevole
 - **Assistente vocale** e lettura dei messaggi in arrivo
 - **Integrazioni con action cam** per avviare, fermare o contrassegnare le registrazioni
+- **Waveify** per ascoltare musica, gestire playlist e controllare la riproduzione direttamente da MotoLink
 
 ---
 
