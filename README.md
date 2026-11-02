@@ -1,113 +1,87 @@
-# 🏍️ StreetRideLink
+# 🏍️ MotoLink
 
-> **The ultimate open-source co-pilot for motorcyclists.**
-> Sistema integrato di telemetria, sicurezza e social riding.
+> **Il compagno di viaggio smart per la tua moto.**
+> Navigazione essenziale, informazioni utili e controllo degli accessori, senza dover guardare lo smartphone durante la guida.
 
-![Status](https://img.shields.io/badge/Status-In%20Development-orange)
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Platform](https://img.shields.io/badge/Platform-ESP32%20%7C%20RPi-red)
-
----
-
-## 📑 Indice
-- [Descrizione](#descrizione)
-- [Funzionalità Principali](#-funzionalità-principali)
-- [Analisi Tecnica](#-analisi-tecnica)
-- [Roadmap di Sviluppo](#-roadmap-di-sviluppo)
-- [Hardware](#-hardware)
+![Status](https://img.shields.io/badge/Status-In%20Sviluppo-orange)
+![Platform](https://img.shields.io/badge/Platform-ESP32-blue)
+![License](https://img.shields.io/badge/License-TBD-lightgrey)
 
 ---
 
-## 📝 Descrizione
-**MotoSmart Hub** è un dispositivo progettato per essere montato sul manubrio di qualsiasi motocicletta. Trasforma i dati grezzi dei sensori inerziali in informazioni vitali per la sicurezza e il divertimento del pilota, offrendo un'interfaccia pulita e non distratta.
+## 📝 Cos’è MotoLink
+
+MotoLink è un dispositivo smart da montare sulla motocicletta, pensato per rendere la guida più semplice, connessa e sicura.
+
+Mostra le informazioni essenziali direttamente sul manubrio — come la prossima svolta, la distanza da percorrere e i dati di viaggio — mentre lo smartphone resta il centro per mappe, percorsi e connessione Internet.
+
+L’obiettivo è offrire un’esperienza pratica e accessibile, senza abbonamenti obbligatori e senza la necessità di una SIM dedicata nel dispositivo.
 
 ---
 
-## 🚀 Funzionalità Principali
+## ✨ Perché nasce
 
-### 🛡️ Sicurezza & Protezione
-- [x] **e-Call:** Chiamata d'emergenza automatica in caso di caduta.
-- [x] **Antifurto GPS:** Notifiche push e tracciamento live se la moto viene spostata a quadro spento.
-- [x] **Black Box:** Registrazione degli ultimi 10 minuti di telemetria in caso di incidente.
+Durante la guida, guardare il telefono per le indicazioni può essere scomodo e distrattivo. MotoLink porta sul display le informazioni davvero utili, con un’interfaccia semplice e comandi fisici utilizzabili anche con i guanti.
 
-### 📊 Telemetria & Performance
-| Funzione | Descrizione | Sensore Usato |
-| :--- | :--- | :--- |
-| **Lean Angle** | Visualizzazione angolo di piega in tempo reale | IMU (Giroscopio) |
-| **Braking Analysis** | Analisi forza G e rilevamento vibrazioni ABS | IMU (Accelerometro) |
-| **Ghost Riding** | Posizione dei compagni sulla mappa in tempo reale | GPS + Cloud |
+È pensato per:
 
-### 🌐 Smart Connectivity
-- **Meteo Dinamico:** Avvisi pioggia imminente basati sulla tua posizione GPS.
-- **Modalità Notturna:** UI adattiva a basso contrasto per non abbagliare il pilota.
-- **Overlay Messaggi:** Lettura TTS (Text-to-Speech) dei messaggi in arrivo.
+- Motociclisti che vogliono una navigazione semplice senza acquistare un navigatore costoso
+- Chi vuole vedere velocità, inclinazione e informazioni di viaggio senza guardare lo smartphone
+- Gruppi di amici che viaggiano insieme
+- Chi utilizza action cam durante i viaggi in moto
 
 ---
 
-## 🔬 Analisi Tecnica
+## 🚀 Funzionalità previste
 
-Il sistema utilizza un algoritmo di **Sensor Fusion** per calcolare l'angolo di piega ed evitare i falsi positivi nelle frenate.
+### Navigazione
+- Indicazioni turn-by-turn essenziali
+- Distanza dalla prossima svolta
+- Collegamento con lo smartphone per mappe e percorsi
+- Funzionamento pensato anche senza connessione Internet
 
-```cpp
-// Esempio logica calcolo inclinazione (Filtro Complementare)
-float calculateLeanAngle(float accAngle, float gyroRate, float dt) {
-    float angle = 0.98 * (angle + gyroRate * dt) + 0.02 * accAngle;
-    return angle;
-}
-```
+### Informazioni di viaggio
+- Dashboard con dati essenziali
+- Velocità e informazioni di guida
+- Angolo di inclinazione della moto
+- Eventuale registrazione e storico dei viaggi
 
-# 🏍️ MotoSmart Hub: The Intelligent Motorcycle Co-Pilot
+### Connettività
+- Connessione con lo smartphone
+- Notifiche e avvisi utili
+- Possibile integrazione con servizi cloud
 
-> **Un ecosistema open-source per trasformare ogni moto in una smart-bike.**
-> Integra navigazione, telemetria avanzata, sicurezza attiva e connettività social.
-
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
-![Version](https://img.shields.io/badge/version-1.0.0--alpha-blue)
-![License](https://img.shields.io/badge/license-MIT-lightgrey)
-
----
-
-## 🗺️ Roadmap di Sviluppo
-
-Segui l'avanzamento del progetto attraverso le fasi di rilascio:
-
-- [x] **Fase 1: Fondamenta**
-  - [x] Selezione Microcontrollore (ESP32-S3).
-  - [x] Algoritmo Sensor Fusion per calcolo angolo di piega.
-- [ ] **Fase 2: Sicurezza & Telemetria**
-  - [ ] Sviluppo analisi FFT per riconoscimento vibrazioni ABS.
-  - [ ] Implementazione Buffer Circolare per Scatola Nera.
-  - [ ] Logica di rilevamento caduta per e-Call.
-- [ ] **Fase 3: Connettività & UI**
-  - [ ] Integrazione API meteo dinamiche.
-  - [ ] Modalità Notturna adattiva automatica.
-  - [ ] Protocollo MQTT per il Ghost Riding di gruppo.
+### Accessori
+- Controllo di action cam come GoPro
+- Possibili integrazioni future con Insta360
+- Funzioni pensate per viaggi di gruppo
 
 ---
 
-## 🛠️ Hardware
+## 🧩 Due versioni
 
-Il sistema è progettato per essere modulare. Di seguito i componenti necessari per il build standard:
+### MotoLink Core
+La versione essenziale: navigazione, informazioni di viaggio e comandi fisici. Un prodotto semplice, con un pagamento una tantum e senza abbonamenti.
 
-| Componente | Modello Consigliato | Funzione |
-| :--- | :--- | :--- |
-| **Cervello (MCU)** | `ESP32-S3` | Elaborazione dati e gestione UI. |
-| **Sensore Inerziale** | `Bosch BNO055` | IMU a 9 assi per piega e decelerazione. |
-| **Modulo GPS** | `u-blox NEO-M8N` | Posizionamento e navigazione. |
-| **Modulo Cellulare** | `SIM7600G-H (4G)` | Connettività cloud e chiamate d'emergenza. |
-| **Display** | `4.3" IPS 1000 nits` | Output visivo IP67 antiriflesso. |
-| **Storage** | `MicroSD 32GB` | Logging dati telemetrici (Black Box). |
+### MotoLink Advanced
+La versione più completa, con funzioni aggiuntive attivabili in base alle esigenze. Alcune funzioni opzionali potranno richiedere un abbonamento.
 
 ---
 
-## 🔬 Dettagli Tecnici
+## 🗺️ Stato del progetto
 
-### Analisi della Frenata (Senza Centralina)
-Il dispositivo monitora la decelerazione longitudinale ($G$) e analizza le vibrazioni ad alta frequenza per rilevare l'attivazione meccanica dell'ABS:
+MotoLink è attualmente in fase di sviluppo.
 
-```cpp
-// Esempio logica trigger ABS basata su soglia vibrazioni
-if (longitudinalG < -0.8 && vibrationFrequency > ABS_THRESHOLD) {
-    status.absTriggered = true;
-    display.showAlert("ABS ACTIVE");
-}
+Le prime attività riguardano la definizione del prodotto, la creazione di un prototipo software e la validazione delle funzionalità principali: navigazione, sensori e connessione con lo smartphone.
+
+---
+
+## 📄 Documentazione
+
+La documentazione tecnica completa del progetto sarà disponibile nella cartella `docs/`.
+
+---
+
+## 👤 Autore
+
+Progetto personale di **Pietro Rocchi**.
