@@ -1,6 +1,6 @@
 # MotoLink
 
-**MotoLink** è un dispositivo intelligente per motociclette, progettato per offrire navigazione, informazioni di viaggio e controllo degli accessori direttamente dal manubrio.
+**MotoLink** è un dispositivo intelligente per motociclette, progettato per offrire navigazione, informazioni di viaggio, intrattenimento e controllo degli accessori direttamente dal manubrio.
 
 Il progetto punta a ridurre le distrazioni durante la guida: le informazioni essenziali sono visualizzate su un display dedicato, mentre lo smartphone gestisce mappe, percorsi e connessione a Internet.
 
@@ -17,14 +17,12 @@ Il progetto punta a ridurre le distrazioni durante la guida: le informazioni ess
 1. [Presentazione](#presentazione)
 2. [Obiettivi del progetto](#obiettivi-del-progetto)
 3. [Pubblico di riferimento](#pubblico-di-riferimento)
-4. [Funzionalità previste](#funzionalità-previste)
-5. [Waveify](#waveify)
-6. [Versioni del prodotto](#versioni-del-prodotto)
-7. [Abbonamento modulare](#abbonamento-modulare)
-8. [Funzionalità future](#funzionalità-future)
-9. [Stato del progetto](#stato-del-progetto)
-10. [Documentazione](#documentazione)
-11. [Autore](#autore)
+4. [Funzionalità](#funzionalità)
+5. [Versioni del prodotto](#versioni-del-prodotto)
+6. [Piano personalizzato](#piano-personalizzato)
+7. [Stato del progetto](#stato-del-progetto)
+8. [Documentazione](#documentazione)
+9. [Autore](#autore)
 
 ---
 
@@ -46,7 +44,7 @@ MotoLink nasce con questi obiettivi:
 - Visualizzare informazioni utili senza dover guardare lo smartphone
 - Consentire l’uso dei comandi anche indossando i guanti
 - Evitare la necessità di una SIM dedicata nel dispositivo
-- Proporre funzionalità opzionali attivabili in base alle esigenze dell’utente
+- Consentire all’utente di attivare soltanto le funzioni di cui ha bisogno
 - Integrare musica, action cam e servizi per i viaggi in motocicletta
 
 ---
@@ -63,47 +61,32 @@ MotoLink è pensato per:
 
 ---
 
-## Funzionalità previste
+## Funzionalità
 
-### Navigazione
+MotoLink includerà le seguenti funzionalità:
 
-- Indicazioni turn-by-turn essenziali
-- Visualizzazione della distanza dalla prossima svolta
-- Connessione con lo smartphone per mappe e percorsi
-- Funzionamento pensato anche in assenza di connessione Internet
-
-### Informazioni di viaggio
-
-- Dashboard con i dati principali
-- Velocità e informazioni di guida
-- Angolo di inclinazione della motocicletta
-- Eventuale registrazione e storico dei viaggi
-
-### Connettività
-
-- Connessione con lo smartphone
-- Notifiche e avvisi utili
-- Possibile integrazione con servizi cloud
-
-### Accessori
-
-- Controllo di action cam, con priorità per GoPro
-- Possibili integrazioni future con Insta360
-- Funzioni dedicate ai viaggi di gruppo
-
----
-
-## Waveify
-
-MotoLink integrerà **Waveify**, un servizio musicale personale sviluppato come parte dell’ecosistema del progetto.
-
-Waveify offrirà:
-
-- Musica gratuita e senza pubblicità
-- Playlist e brani preferiti
-- Riproduzione musicale direttamente collegata a MotoLink
-- Comandi rapidi per play, pausa, traccia successiva e precedente
-- Un’interfaccia pensata per l’utilizzo con i guanti
+- **Navigazione turn-by-turn**, con indicazione della prossima svolta e della distanza residua
+- **Connessione con lo smartphone** per mappe, percorsi e accesso a Internet
+- **Funzionamento senza connessione Internet**, per garantire l’utilizzo anche in aree senza copertura
+- **Dashboard di viaggio**, con velocità, informazioni di guida e dati essenziali
+- **Angolo di inclinazione** della motocicletta
+- **Registrazione e storico dei viaggi**
+- **Notifiche e avvisi utili** durante la guida
+- **Integrazione con servizi cloud** per salvare dati, viaggi e configurazioni
+- **Controllo delle action cam**, con priorità per GoPro e possibili integrazioni con Insta360
+- **Registrazione e contrassegno dei momenti importanti** durante i viaggi
+- **Posizione dei compagni di viaggio** in tempo reale
+- **Comunicazione di gruppo**, con possibile indicazione visiva di chi sta parlando
+- **Rete mesh** tra dispositivi MotoLink per i viaggi di gruppo
+- **Antifurto GPS**, con notifiche in caso di movimento sospetto della moto
+- **Rilevamento caduta** ed eventuale chiamata di emergenza
+- **Black box**, per registrare i dati negli istanti precedenti a un evento
+- **Telemetria avanzata**, con accelerazioni, frenate e analisi della guida
+- **Percorsi GPX** e gestione avanzata dei viaggi
+- **Meteo dinamico**, con avvisi su pioggia o condizioni avverse
+- **Modalità notturna**, per una visualizzazione più confortevole
+- **Assistente vocale** e lettura dei messaggi in arrivo
+- **Musica con Waveify**: servizio musicale personale integrato, gratuito e senza pubblicità, con playlist, brani preferiti e comandi rapidi per play, pausa e cambio traccia
 
 ---
 
@@ -123,44 +106,13 @@ Include maggiore capacità di espansione e consente l’attivazione di funzional
 
 ---
 
-## Abbonamento modulare
+## Piano personalizzato
 
-Le funzionalità di MotoLink non saranno incluse in un unico pacchetto rigido.
+MotoLink non utilizzerà pacchetti fissi di abbonamento.
 
-L’utente potrà attivare solo le funzioni che desidera utilizzare, scegliendole singolarmente all’interno di categorie tematiche.
+Ogni funzionalità avrà un proprio costo. L’utente potrà selezionare solo le funzioni che desidera utilizzare e il prezzo finale del piano sarà dato dalla somma delle funzioni attivate.
 
-Le categorie previste includono:
-
-| Categoria | Esempi di funzionalità |
-|---|---|
-| **Viaggio** | Navigazione avanzata, percorsi GPX, storico viaggi |
-| **Camera** | Controllo GoPro o Insta360, registrazione e tag dei momenti importanti |
-| **Squad** | Posizione dei compagni, comunicazione e funzioni di gruppo |
-| **Pro** | Telemetria avanzata, analisi della guida e funzioni professionali |
-| **Musica** | Waveify, playlist e riproduzione musicale |
-
-Questo modello consente a ogni motociclista di costruire la propria configurazione MotoLink e di attivare soltanto le funzionalità realmente utili.
-
----
-
-## Funzionalità future
-
-Oltre alle funzioni di base, MotoLink potrà includere:
-
-- Percorsi GPX e gestione avanzata dei viaggi
-- Telemetria avanzata con accelerazioni, frenate e analisi della guida
-- Servizi cloud per salvare viaggi, statistiche e configurazioni
-- Black box per la registrazione dei dati negli istanti precedenti a un evento
-- Rilevamento caduta ed eventuale chiamata di emergenza
-- Antifurto GPS con notifiche in caso di movimento sospetto
-- Posizione dei compagni di viaggio in tempo reale
-- Comunicazione di gruppo e indicazione visiva di chi sta parlando
-- Rete mesh tra dispositivi MotoLink per viaggi di gruppo
-- Meteo dinamico con avvisi su pioggia o condizioni avverse
-- Modalità notturna per una visualizzazione più confortevole
-- Assistente vocale e lettura dei messaggi in arrivo
-- Integrazioni con action cam per avviare, fermare o contrassegnare le registrazioni
-- Waveify per l’ascolto musicale e la gestione delle playlist
+In questo modo ogni motociclista può costruire la propria configurazione MotoLink e spendere soltanto per ciò che gli serve davvero.
 
 ---
 
